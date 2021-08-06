@@ -42,7 +42,7 @@ function DS2Wrapper:Register(DefaultDataFolder, PlayerDataFolder, Player)
         end
         
         -- Update/Listen to Player Cache --
-		for _, valueObject in ipairs(PlayerDataFolder:GetDescendants()) do
+	for _, valueObject in ipairs(PlayerDataFolder:GetDescendants()) do
             valueObject.Value = PlayerData[valueObject.Name]
 
             valueObject.Changed:Connect(function(value)
