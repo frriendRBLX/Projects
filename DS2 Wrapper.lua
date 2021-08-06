@@ -3,7 +3,7 @@ local DS2Wrapper = {}
 --[[
     DataStore2 Wrapper by frriend
 
-    Allows automatic saving, validation, and updating of Values within a folder!
+    Allows automatic saving, loading, verification, and updating of Values within a folder!
 
     API:
     	:Register(DEFAULT_FOLDER, PLAYER_FOLDER, PLAYER) 
