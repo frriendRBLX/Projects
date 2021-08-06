@@ -5,8 +5,8 @@ local DS2Wrapper = {}
 
     Allows automatic saving, validation, and updating of Values within a folder!
 
-    Usage:
-        + DS:Register(DEFAULT_FOLDER, PLAYER_FOLDER, PLAYER)
+    API:
+    	:Register(DEFAULT_FOLDER, PLAYER_FOLDER, PLAYER) 
 
 --]]
 
