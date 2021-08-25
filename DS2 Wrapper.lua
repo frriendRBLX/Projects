@@ -7,7 +7,7 @@ DS2Wrapper.__index = DS2Wrapper
     Allows automatic saving, loading, verification, and updating of Values within a folder!
 
     API:
-    	:Register(DEFAULT_FOLDER, PLAYER_FOLDER, PLAYER) 
+    	:Register(PLAYER_FOLDER, PLAYER) 
 
 --]]
 
