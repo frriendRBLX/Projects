@@ -6,7 +6,8 @@ local function Test(NumTrials, Method)
 	for i = 0, NumTrials do
 		local InitTime = tick()
 		Method()
-		Deltas[i] = tick() - InitTime
+		local Delta = tick() - InitTime
+		Deltas[i] = Delta
 	end
 	
 	local Result = 0;
