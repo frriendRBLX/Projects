@@ -1,16 +1,15 @@
 local Tester = {}
 
 local function Test(NumTrials, Method)
-	local Deltas = {}
+	local Deltas = table.create(NumTrials)
 	
 	for i = 0, NumTrials do
 		local InitTime = tick()
 		Method()
-		table.insert(Deltas, tick() - InitTime)
+		Deltas[i] = tick() - InitTime
 	end
 	
 	local Result = 0;
-	
 	if NumTrials > 0 then
 		for _, Delta in ipairs(Deltas) do
 			Result += Delta
@@ -20,7 +19,7 @@ local function Test(NumTrials, Method)
 	else
 		Result = Deltas[1]
 	end
-
+	
 	return Result
 end
 
