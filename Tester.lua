@@ -10,6 +10,7 @@ local function Test(NumTrials, Method)
 	end
 	
 	local Result = 0;
+	
 	if NumTrials > 0 then
 		for _, Delta in ipairs(Deltas) do
 			Result += Delta
@@ -19,7 +20,7 @@ local function Test(NumTrials, Method)
 	else
 		Result = Deltas[1]
 	end
-	
+
 	return Result
 end
 
